@@ -1,0 +1,68 @@
+.draggable {
+  app-region: drag;
+  -webkit-app-region: drag;
+}
+
+.nonDraggable {
+  app-region: no-drag;
+  -webkit-app-region: no-drag;
+}
+
+.header {
+  width: calc(100% - 40px);
+  height: 5vh;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  &__settingsBlock {
+    width: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    button {
+      background: none;
+      border: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      font-size: 26px;
+      cursor: pointer;
+      transition: ease-in-out .2s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #343434;
+      &:hover {
+        background: #c3cff4;
+        color: #ffffff;
+      }
+    }
+  }
+  &__windowBlock {
+    width: fit-content;
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    button {
+      background: none;
+      border: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      font-size: 26px;
+      cursor: pointer;
+      transition: ease-in-out .2s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #343434;
+      &:hover {
+        background: #c3cff4;
+        color: #ffffff;
+      }
+    }
+  }
+}

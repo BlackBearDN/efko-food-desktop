@@ -1,0 +1,104 @@
+.generalPage {
+  width: calc(100% - 100px);
+  margin: 0 20px 0 80px;
+  height: 85vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .settingsBlock {
+    width: 79%;
+    height: 100%;
+    box-shadow: 0 0 10px #dfdfdf;
+    background: #ffffff;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__productsList {
+      width: 25%;
+      height: 90%;
+      margin: 0 10px 0 40px;
+      border-left: 2px solid #e3e3e3;
+      border-right: 2px solid #e3e3e3;
+      &_header {
+        width: calc(100% - 10px);
+        height: 30px;
+        padding: 5px;
+        border-bottom: 2px solid #e3e3e3;
+        display: flex;
+        align-items: center;
+        h3 {
+          width: 100%;
+          margin: 0;
+          text-align: center;
+          color: #297BFF;
+          font-size: 21px;
+          font-weight: 500;
+        }
+      }
+      &_list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        button {
+          width: 100%;
+          padding: 5px 10px;
+          background: none;
+          border: none;
+          text-align: left;
+          border-bottom: 1px solid #e3e3e3;
+          color: #343434;
+          font-size: 16px;
+          cursor: pointer;
+          transition: ease-in-out .2s;
+          &:hover {
+            background: #c3cff4;
+            color: #ffffff;
+          }
+        }
+        .disableButton {
+          color: #afafaf;
+        }
+      }
+    }
+    &__paramsList {
+      width: 65%;
+      height: 90%;
+      margin: 0 40px 0 10px;
+      &_header {
+        width: calc(100% - 10px);
+        height: 30px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        h3 {
+          margin: 0;
+          color: #297BFF;
+          font-size: 21px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .resultBlock {
+    width: 20%;
+    height: calc(100% - 40px);
+    padding: 20px 0;
+    background: #ffffff;
+    box-shadow: 0 0 10px #dfdfdf;
+    border-radius: 30px;
+    &__header {
+      width: calc(100% - 60px);
+      height: 30px;
+      padding: 5px 30px;
+      display: flex;
+      align-items: center;
+      h3 {
+        margin: 0;
+        color: #297BFF;
+        font-size: 21px;
+        font-weight: 500;
+      }
+    }
+  }
+}
