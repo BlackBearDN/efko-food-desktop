@@ -1,8 +1,9 @@
-interface IProduct {
+interface IDash {
   _id: string,
   name: string,
-  category: string,
-  price: number,
+  photoUrl?: string,
+  recipeUrl?: string,
+  products: IProduct[],
   calories: number,
   params: {
     proteins: number,

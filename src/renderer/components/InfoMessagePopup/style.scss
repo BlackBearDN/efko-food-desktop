@@ -1,0 +1,27 @@
+.infoMessagePopupRed {
+  position: absolute;
+  z-index: 1999;
+  left: 10px;
+  bottom: 20px;
+  min-width: 200px;
+  padding: 10px 15px;
+  color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #cfcfcf;
+  word-wrap: break-word;
+  background: #ff8551;
+}
+
+.infoMessagePopupBlue {
+  position: absolute;
+  z-index: 1999;
+  left: 10px;
+  bottom: 20px;
+  min-width: 200px;
+  padding: 10px 15px;
+  color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #cfcfcf;
+  word-wrap: break-word;
+  background: #007FFF;
+}

@@ -6,6 +6,7 @@ const Navigation = () => {
   return (
     <div className={"navigation"}>
       <NavLink exact to={"/"} className={isActive => isActive ? "activeLink" : ""}><i className={"fas fa-home"} /></NavLink>
+      <NavLink to={"/dashes"} className={isActive => isActive ? "activeLink" : ""}><i className={"fas fa-utensils"} /></NavLink>
       <NavLink to={"/food"} className={isActive => isActive ? "activeLink" : ""}><i className={"fas fa-apple-alt"} /></NavLink>
     </div>
   );

@@ -1,0 +1,69 @@
+.productsList {
+  width: 25%;
+  height: 90%;
+  margin: 0 10px 0 40px;
+  border-left: 2px solid #e3e3e3;
+  border-right: 2px solid #e3e3e3;
+  &_header {
+    width: calc(100% - 10px);
+    height: 30px;
+    padding: 5px;
+    border-bottom: 2px solid #e3e3e3;
+    display: flex;
+    align-items: center;
+    h3 {
+      width: 100%;
+      margin: 0;
+      text-align: center;
+      color: #297BFF;
+      font-size: 21px;
+      font-weight: 500;
+    }
+  }
+  &_list {
+    width: 100%;
+    height: 95%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    &::-webkit-scrollbar {
+      width: 8px;
+      background: #ffffff;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #343434;
+      border-radius: 5px;
+      transition: ease-in-out .2s;
+    }
+    button {
+      width: 100%;
+      padding: 5px 10px;
+      background: none;
+      border: none;
+      text-align: left;
+      font-size: 16px;
+      cursor: pointer;
+      transition: ease-in-out .2s;
+    }
+    &_addButton {
+      border-bottom: 1px solid #e3e3e3;
+      color: #343434;
+      &:hover {
+        background: #c3cff4;
+        color: #ffffff;
+      }
+    }
+    &_removeButton {
+      background: #343434;
+      color: #ffffff;
+      border-bottom: 1px solid #343434;
+      &:hover {
+        background: #FEE4CB;
+        color: #343434;
+      }
+    }
+    .disableButton {
+      color: #afafaf;
+    }
+  }
+}
